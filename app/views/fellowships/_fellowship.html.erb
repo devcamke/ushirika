@@ -1,0 +1,42 @@
+<div id="<%= dom_id fellowship %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= fellowship.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Day of meeting:</strong>
+    <%= fellowship.day_of_meeting %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Coordinator:</strong>
+    <%= fellowship.coordinator %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Host:</strong>
+    <%= fellowship.host %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Minister:</strong>
+    <%= fellowship.minister %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Attendees:</strong>
+    <%= fellowship.attendees %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Comments:</strong>
+    <%= fellowship.comments %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this fellowship", fellowship, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this fellowship", edit_fellowship_path(fellowship), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
