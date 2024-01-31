@@ -6,6 +6,7 @@ ruby "3.3.0"
 gem "rails", "~> 7.1.3"
 
 gem 'bootsnap', require: false
+gem "devise", "~> 4.9"
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"
